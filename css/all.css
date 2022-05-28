@@ -1,0 +1,214 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+h2{
+    font-size: 2rem;
+    padding:30px 0;
+}
+h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.no-gutter{
+    --bs-gutter-x:0;
+}
+@media (min-width:1400px) {
+.container{
+    max-width: 1140px;  }  
+}
+
+
+/* ===================================== start ========================================= */
+/* swiper */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+/* swiper end */
+/* layuot */
+.navbar{
+    position: fixed;
+    background-color:rgba(255, 255, 255,1); 
+    width: 100%; 
+    z-index: 999;
+}
+.navbar-nav{
+   margin-left:auto ;
+}
+
+
+footer{
+    border-bottom: 1px solid white;
+    padding-top: 30px;
+}
+footer .container{
+    padding: 0 50px;
+}
+footer .footer-left,.footer-right{
+    padding: 0 50px;
+}
+footer .footer-left img{   
+    margin-bottom: 30px;
+    
+}
+footer .footer-left p{
+    margin-bottom: 30px;
+}
+footer .footer-right h3{
+    margin-bottom: 30px;
+}
+footer .footer-right li{
+    margin-bottom: 20px;
+}
+.footer-buttom{
+
+    padding: 10px;
+}
+
+@media (max-width:992px) {
+    .navbar{
+        background-color:rgb(255, 255, 255); 
+        width: 100%; 
+        z-index: 999;
+    }
+}
+@media (max-width:576px) {
+    .navbar{
+        position: unset;
+    }
+}
+
+/* layuot end*/
+
+
+
+
+
+
+/* homepage */
+.carousel-caption{
+    bottom: 30%;
+    font-size: 45px;
+}
+
+
+@media (min-width: 768px) {
+    .carousel-inner img{ 
+        height: 100vh;
+        object-fit: cover;
+    }    
+
+}
+@media (max-width:992px) {
+    .carousel-caption{
+        font-size: 2rem;
+    }
+}
+@media (max-width:576px) {
+    .carousel-caption{
+        font-size: 1.2rem;
+    }
+}
+
+.advantage{
+    color: #fff;
+    background-color: rgba(36, 36, 36, 0.438);
+}
+
+
+
+.product a{
+    text-decoration: none;
+}
+.product img{
+    vertical-align: bottom;
+}
+.product p{
+    font-size: 1.2rem;
+    padding: 1.2rem;
+    background-color: red;
+    color: #fff ;
+}
+
+.news .card-body{
+    text-align: left;
+    display: flex   ;
+    flex-direction: column;
+}
+.news .card-body p{
+    margin-bottom: 10px;
+}
+.news .card-body .btn{
+    margin-left: auto;
+}
+/* homepage end*/
