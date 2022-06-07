@@ -18,7 +18,7 @@
 <body>
     <!-- header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light navbarbg1" id="navbar">
             <div class="container">
                 <a class="navbar-brand" href="./index.html"><img src="https://picsum.photos/200/80?random" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -29,19 +29,16 @@
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav  mb-2 mb-lg-0 fs-5">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                            <a class="nav-link" href="./news.html">最新消息</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./about.html">About</a>
+                            <a class="nav-link" href="./product.html">所有產品</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./news.html">News</a>
+                            <a class="nav-link" href="./about.html">關於XX</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./product.html">Product</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contact.html">Contact</a>
+                            <a class="nav-link" href="./contact.html">聯絡我們</a>
                         </li>
                     </ul>
                     <form class="d-flex">
@@ -53,18 +50,64 @@
         </nav>
     </header>
     <!-- header -->
-    <main style="height: 1000px; background-color: #f2f2f2;">
-        <div class="page-banner" style="background-image:url('https://picsum.photos/1920/1080') ;">
+    <main style=" background-color: #f2f2f2;">
+        <div class="page-banner" style="background-image:url('https://picsum.photos/1920/1080'); margin-bottom: 60px;">
             <div style="background-color:rgba(0 ,0 ,0 ,0.5 ) ;">
-                <div class="container overlay" >
-                    <ul class="breadcrumb text-light" >
+                <div class="container overlay">
+                    <ul class="breadcrumb text-light">
                         <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
                         <li class="breadcrumb-item active"><a href="./news.html">News</a></li>
                     </ul>
                     <h2>News</h2>
                 </div>
             </div>
-
+        </div>
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-2 ">
+                    <ul class="news_list">
+                        <li><a href="#">最新消息</a></li>
+                        <li><a href="#">優惠資訊</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-10 ">
+                    <div class="row news_card">
+                        <div class="col-md-4">
+                            <div class="news_img">
+                                <img class="img-fluid" src="https://picsum.photos/1920/1080" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="news_info">
+                                <h4>news title</h4>
+                                <p>2022/06/06</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, voluptatum distinctio!
+                                    Molestias, similique ex sit fugit et quia explicabo at voluptates odio repellat ut
+                                    sunt fugiat molestiae assumenda saepe eius!</p>
+                                <button class="btn news_btn">Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row news_card">
+                        <div class="col-md-4">
+                            <div class="news_img">
+                                <img class="img-fluid" src="https://picsum.photos/1920/1080" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="news_info">
+                                <h4>news title</h4>
+                                <p>2022/06/06</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, voluptatum distinctio!
+                                    Molestias, similique ex sit fugit et quia explicabo at voluptates odio repellat ut
+                                    sunt fugiat molestiae assumenda saepe eius!</p>
+                                <button class="btn news_btn">Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
 
     </main>
@@ -107,8 +150,6 @@
                     </ul>
                 </div>
             </div>
-
-
         </div>
     </footer>
     <div class="footer-buttom  bg-dark text-center text-light">
@@ -120,11 +161,11 @@
         crossorigin="anonymous"></script>
     <script>
         $(document).scroll(function () {
-            if ($(this).scrollTop() < $('.navbar').height()) {
-                $('.navbar').css('background-color', 'rgba(255, 255, 255, 0.7)')
+            if ($(this).scrollTop() > $('.navbar').height()) {
+                $("#navbar").removeClass("navbarbg1").addClass("navbarbg2");
             }
             else {
-                $('.navbar').css('background-color', 'rgba(255, 255, 255, 0.8)')
+                $("#navbar").removeClass("navbarbg2").addClass("navbarbg1");
             }
         });
     </script>

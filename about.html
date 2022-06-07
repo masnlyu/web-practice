@@ -18,7 +18,7 @@
 <body>
     <!-- header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light navbarbg1" id="navbar">
             <div class="container">
                 <a class="navbar-brand" href="./index.html"><img src="https://picsum.photos/200/80?random" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -29,19 +29,16 @@
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav  mb-2 mb-lg-0 fs-5">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                            <a class="nav-link" href="./news.html">最新消息</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./about.html">About</a>
+                            <a class="nav-link" href="./product.html">所有產品</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./news.html">News</a>
+                            <a class="nav-link" href="./about.html">關於XX</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./product.html">Product</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contact.html">Contact</a>
+                            <a class="nav-link" href="./contact.html">聯絡我們</a>
                         </li>
                     </ul>
                     <form class="d-flex">
@@ -53,7 +50,7 @@
         </nav>
     </header>
     <!-- header -->
-    <main style="height: 1000px; background-color: #f2f2f2;">
+    <main class="aboutpage">
         <div class="page-banner" style="background-image:url('https://picsum.photos/1920/1080') ;">
             <div style="background-color:rgba(0 ,0 ,0 ,0.5 ) ;">
                 <div class="container overlay">
@@ -64,7 +61,31 @@
                     <h2>About</h2>
                 </div>
             </div>
-
+        </div>
+        <div class="container about-introduce">
+            <div class="row p-5">
+                <div class="col-md-3">
+                    <ul>
+                        <li>關於我們</li>
+                    </ul>
+                </div>
+                <div class="col-md-9 col-sm-12">
+                    <div class="row">
+                        <h3>About</h3>
+                        <div class="col-md-8">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem omnis hic iure cupiditate
+                                similique dolorem accusantium. Incidunt sit vel praesentium a dolor, et suscipit aliquam
+                                exercitationem quis rerum explicabo aut.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem omnis hic iure cupiditate
+                                similique dolorem accusantium. Incidunt sit vel praesentium a dolor, et suscipit aliquam
+                                exercitationem quis rerum explicabo aut.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-fluid" src="https://picsum.photos/1920/1920" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </main>
@@ -120,11 +141,11 @@
         crossorigin="anonymous"></script>
     <script>
         $(document).scroll(function () {
-            if ($(this).scrollTop() < $('.navbar').height()) {
-                $('.navbar').css('background-color', 'rgba(255, 255, 255, 0.7)')
+            if ($(this).scrollTop() > $('.navbar').height()) {
+                $("#navbar").removeClass("navbarbg1").addClass("navbarbg2");
             }
             else {
-                $('.navbar').css('background-color', 'rgba(255, 255, 255, 0.8)')
+                $("#navbar").removeClass("navbarbg2").addClass("navbarbg1");
             }
         });
     </script>

@@ -18,7 +18,7 @@
 <body>
     <!-- header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light navbarbg1" id="navbar">
             <div class="container">
                 <a class="navbar-brand" href="./index.html"><img src="https://picsum.photos/200/80?random" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -29,19 +29,16 @@
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav  mb-2 mb-lg-0 fs-5">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            <a class="nav-link" href="./news.html">最新消息</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./about.html">About</a>
+                            <a class="nav-link" href="./product.html">所有產品</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./news.html">News</a>
+                            <a class="nav-link" href="./about.html">關於XX</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./product.html">Product</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contact.html">Contact</a>
+                            <a class="nav-link" href="./contact.html">聯絡我們</a>
                         </li>
                     </ul>
                     <form class="d-flex">
@@ -104,16 +101,16 @@
             <div class="container text-center p-5">
                 <h2 class="">Our Advantage</h2>
                 <div class="row">
-                    <div class="col-4  ">
+                    <div class="col-md-4  col-sm-12 p-3">
                         <img class="mb-3" src="https://picsum.photos/100/100?random" alt="">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                             .</p>
                     </div>
-                    <div class="col-4  ">
+                    <div class="col-md-4  col-sm-12 p-3">
                         <img class="mb-3" src="https://picsum.photos/100/100?random" alt="">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
                     </div>
-                    <div class="col-4   ">
+                    <div class="col-md-4  col-sm-12 p-3">
                         <img class="mb-3" src="https://picsum.photos/100/100?random" alt="">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
                     </div>
@@ -144,57 +141,7 @@
             </div>
         </div>
         <!-- product -->
-        <!-- news -->
-        <div class="news">
-            <div class="container py-5">
-                <h2>news</h2>
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <img src="https://picsum.photos/200/100?random" class="card-img-top img-fluid"
-                                    alt="...">
-                                <div class="card-body">
-                                    <h3 class="card-title">Card title</h3>
-                                    <p>2022/05/28</p>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <img src="https://picsum.photos/200/100?random" class="card-img-top img-fluid"
-                                    alt="...">
-                                <div class="card-body">
-                                    <h3 class="card-title">Card title</h3>
-                                    <p>2022/05/28</p>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <img src="https://picsum.photos/200/100?random" class="card-img-top img-fluid"
-                                    alt="...">
-                                <div class="card-body">
-                                    <h3 class="card-title">Card title</h3>
-                                    <p>2022/05/28</p>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="swiper-pagination"></div> -->
-                </div>
-            </div>
-        </div>
-        <!-- mews -->
+
     </main>
     <!-- footer -->
     <footer class="bg-dark py-5">
@@ -248,11 +195,11 @@
         crossorigin="anonymous"></script>
     <script>
         $(document).scroll(function () {
-            if ($(this).scrollTop() < $('.navbar').height()) {
-                $('.navbar').css('background-color', 'rgba(255, 255, 255, 0.7)')
+            if ($(this).scrollTop() > $('.navbar').height()) {
+                $( "#navbar" ).removeClass( "navbarbg1" ).addClass( "navbarbg2" );
             }
             else {
-                $('.navbar').css('background-color', 'rgba(255, 255, 255, 0.85)')
+                $( "#navbar" ).removeClass( "navbarbg2" ).addClass( "navbarbg1" );
             }
         });
     </script>
