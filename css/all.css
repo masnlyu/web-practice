@@ -175,6 +175,10 @@ footer .footer-right li{
     }
 }
 
+.page-banner{
+    background-position: center;
+}
+
 /* layuot end*/
 
 
@@ -237,7 +241,7 @@ footer .footer-right li{
 .aboutpage{
     background-color: #f2f2f2;
 }
-.about-introduce ul{
+.about_we ul{
     background-color: black;
     color: white;
     line-height: 1.5;
@@ -252,7 +256,20 @@ footer .footer-right li{
     margin-bottom: 30px;
 }
 .about-introduce p{
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    line-height: 2;
+
+}
+.map_info{
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.map_info p ,.map_info li{
+    line-height: 1.5;
+}
+.map_iframe{
+    border: 0 2px 2px 0 solid gray;
+    padding: 0px;
 }
 /* about page end */
 /* news page */
