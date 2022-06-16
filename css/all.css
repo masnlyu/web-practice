@@ -179,14 +179,8 @@ footer .footer-right li{
 
 
 
-
-
-
 /* homepage */
-.carousel-caption{
-    bottom: 30%;
-    font-size: 45px;
-}
+
 
 
 @media (min-width: 768px) {
@@ -208,15 +202,20 @@ footer .footer-right li{
 }
 
 .advantage{
-    color: #fff;
-    background-color: rgba(36, 36, 36, 0.438);
+    color: rgb(0, 0, 0);
+    background-image: url('/img/index-bg.jpg');
+
 }
 
 .product a{
     text-decoration: none;
+    display: block;
+    overflow: hidden;
 }
 .product img{
     vertical-align: bottom;
+    transition: all 0.3s;
+    transform: scale(1,1);
 }
 .product p{
     font-size: 1.2rem;
@@ -224,6 +223,13 @@ footer .footer-right li{
     background-color: red;
     color: #fff ;
 }
+#product-a img:hover{
+    transform: scale(1.1);
+}
+
+
+
+
 /* homepage end*/
 
 
