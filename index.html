@@ -109,60 +109,48 @@
         <!-- advantage -->
         <!-- product -->
 
-        <div class="product container">
+        <div class="home_product container">
             <h2>所有商品</h2>
             <div class="row ">
                 <div class="col-md-6 p-3 product_card">
                     <div>
-                        <a href="#">
-                            <img src="./img/容易照顧植物.jpg" style="width:100%;" class="product_img">
+                        <a href="./product.html">
+                            <div class="product_img">
+                                <img src="./img/容易照顧植物.jpg" style="width:100%;">
+                            </div>
+                            <p class="product_p">容易照顧植物</p>
                         </a>
-                        <div>
-                            <a href="#">
-                                <p class="product_p">容易照顧植物</p>
-                            </a>
-                        </div>
                     </div>
-
                 </div>
                 <div class="col-md-6 p-3 product_card">
                     <div>
-                        <a href="#">
-                            <img src="./img/驅蟲植物.jpg" style="width:100%;" class="product_img">
+                        <a href="./product.html">
+                            <div class="product_img">
+                                <img src="./img/驅蟲植物.jpg" style="width:100%;" class="product_img">
+                            </div>
+                            <p class="product_p">驅蟲植物</p>
                         </a>
-                        <div>
-                            <a href="#">
-                                <p class="product_p">驅蟲植物</p>
-                            </a>
-                        </div>
                     </div>
-
                 </div>
                 <div class="col-md-6 p-3 product_card">
                     <div>
-                        <a href="#">
-                            <img src="./img/香草植物.jpg" style="width:100%;" class="product_img">
+                        <a href="./product.html">
+                            <div class="product_img">
+                                <img src="./img/香草植物.jpg" style="width:100%;" class="product_img">
+                            </div>
+                            <p class="product_p">香草植物</p>
                         </a>
-                        <div>
-                            <a href="#">
-                                <p class="product_p">香草植物</p>
-                            </a>
-                        </div>
                     </div>
-
                 </div>
                 <div class="col-md-6 p-3 product_card">
                     <div>
-                        <a href="#">
-                            <img src="./img/無土栽培植物.jpg" style="width:100%;" class="product_img">
+                        <a href="./product.html">
+                            <div class="product_img">
+                                <img src="./img/無土栽培植物.jpg" style="width:100%;" class="product_img">
+                            </div>
+                            <p class="product_p">無土植栽植物</p>
                         </a>
-                        <div>
-                            <a href="#">
-                                <p class="product_p">無土植栽植物</p>
-                            </a>
-                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -231,12 +219,12 @@
         });
         $(".product_card").hover(function () {
             // $(this).find(".product_p").addClass("stop")
-            $(this).find(".product_img").css("transform", "scale(1.1)");
+            $(this).find("img").css("transform", "scale(1.1)");
             $(this).find(".product_p").css({ "background-color": "white", "color": "rgb(0, 136, 95)" });
             console.log("...")
 
         }, function () {
-            $(this).find(".product_img").css("transform", "scale(1)");
+            $(this).find("img").css("transform", "scale(1)");
             $(this).find(".product_p").css({ "background-color": "rgb(0, 136, 95)", "color": "white" });
         }
         );
