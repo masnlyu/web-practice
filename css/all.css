@@ -186,7 +186,9 @@ footer .footer-right li{
 /* homepage */
 
 
-
+.carousel-inner img{
+  min-height: 50vh;  
+}
 @media (min-width: 768px) {
     .carousel-inner img{ 
         height: 90vh;
