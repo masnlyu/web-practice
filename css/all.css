@@ -229,17 +229,20 @@ footer .footer-right li{
 .advantage_card{
     margin-bottom: 20px;
 }
-.product a{
-    text-decoration: none;
-    display: block;
+.home_product .product_img{
+    
     overflow: hidden;
 }
-.product img{
+.product_card a{
+    text-decoration: none;
+    display: block;
+}
+.home_product img{
     vertical-align: middle;
     transition: all 0.3s;
     transform: scale(1,1);
 }
-.product p{
+.home_product p{
     font-size: 1.2rem;
     padding: 1.2rem;
     background-color: rgb(0, 136, 95);
