@@ -286,7 +286,7 @@ footer .footer-right li{
     line-height: 1.5;
 }
 .map_iframe{
-    border: 0 2px 2px 0 solid gray;
+    box-shadow: 5px 5px 9px grey;
     padding: 0px;
 }
 /* about page end */
